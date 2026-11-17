@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suscríbete</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="box">
+    <h1>Una buena idea por semana.</h1>
+    <p>Recibe novedades y consejos directamente en tu correo.</p>
+
+    <form id="form">
+      <label for="name">Nombre</label>
+      <input id="name" name="name" required maxlength="60" autocomplete="name">
+
+      <label for="email">Correo electrónico</label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        required
+        autocomplete="email"
+        placeholder="tu@correo.com"
+      >
+
+      <button>Quiero suscribirme</button>
+    </form>
+
+    <p id="msg" role="status" aria-live="polite"></p>
+  </main>
+</body>
+</html>
